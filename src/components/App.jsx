@@ -1,16 +1,18 @@
 import '../styles/App.css';
 
 // COMPONENT IMPORTS 
-import Home from './Home'
-import Country from './Country'
+import Main from './Main'
+import Header from './Header'
 import CountryList from './CountryList'
 import Footer from './Footer'
+
+// IMPORT PAGES
 
 function App() {
   return (
     <div className="App">
-      <Home/>
-      <Country/>
+      <Header/>
+      <Main/>
       <CountryList/>
       <Footer/>
     </div>
