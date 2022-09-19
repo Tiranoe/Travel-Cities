@@ -37,7 +37,7 @@ https://api.countrystatecity.in/v1/countries
 ```
 
 ### Components Hierarchy
-![Component Hierarchy](https://github.com/Tiranoe/Travel-Cities/blob/main/travelworld/assets/Components%20Diagram.png?raw=true)
+![Component Hierarchy](https://github.com/Tiranoe/Travel-Cities/blob/main/assets/Components%20Diagram.png?raw=true)
 
 
 ### Stretch Features
