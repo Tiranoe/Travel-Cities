@@ -1,4 +1,7 @@
 import { Routes, Route } from "react-router-dom"
+import Country from '../pages/Country';
+import Show from '../pages/Show';
+
 
 const Main = () => {
   return (

@@ -9,5 +9,4 @@ const Nav = () => {
     )
 }
 
-export default Header;
 export {Nav};
