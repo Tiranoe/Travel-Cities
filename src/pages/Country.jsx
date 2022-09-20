@@ -5,13 +5,21 @@ function Country() {
     const [countries, setCountries] = useState([]);
 
     useEffect(() => {
-        fetch('https://api.countrystatecity.in/v1/countries')
-        .then(res => res.json())
-        .then(json => {
-            console.log(json)
-            setCountries(json.results)
-        })
-    }, [])
+        const URL='https://restcountries.com/v3.1/all'
+
+        const fetchData = async () => {
+            try {
+                const response = await fetch(URL);
+                const json = await response.json();
+                console.log(json);
+                setCountries(json.slip.countries);
+            } catch(err) {
+                console.log(err);
+            }
+        };
+
+        fetchData();
+    }, []);
 
     return (
     <div>

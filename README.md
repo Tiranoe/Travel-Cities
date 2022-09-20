@@ -18,22 +18,163 @@ Country Detail Page
 * As a user, I want to add list of countries to my favorite s so that I can see all the countries that user is interested in.
 
 ## API
-https://api.countrystatecity.in/v1/countries
+https://restcountries.com/#api-endpoints-v3-all
 
 ## Country API Successful data
 ```javascript
-{
-  "id": 101,
-  "name": "India",
-  "iso3": "IND",
-  "iso2": "IN",
-  "phonecode": "91",
-  "capital": "New Delhi",
-  "currency": "INR",
-  "native": "भारत",
-  "emoji": "🇮🇳",
-  "emojiU": "U+1F1EE U+1F1F3"
-}
+[
+  {
+    "name": {
+      "common": "Japan",
+      "official": "Japan",
+      "nativeName": {
+        "jpn": {
+          "official": "日本",
+          "common": "日本"
+        }
+      }
+    },
+    "tld": [
+      ".jp",
+      ".みんな"
+    ],
+    "cca2": "JP",
+    "ccn3": "392",
+    "cca3": "JPN",
+    "cioc": "JPN",
+    "independent": true,
+    "status": "officially-assigned",
+    "unMember": true,
+    "currencies": {
+      "JPY": {
+        "name": "Japanese yen",
+        "symbol": "¥"
+      }
+    },
+    "idd": {
+      "root": "+8",
+      "suffixes": [
+        "1"
+      ]
+    },
+    "capital": [
+      "Tokyo"
+    ],
+    "altSpellings": [
+      "JP",
+      "Nippon",
+      "Nihon"
+    ],
+    "region": "Asia",
+    "subregion": "Eastern Asia",
+    "languages": {
+      "jpn": "Japanese"
+    },
+    "translations": {
+      "ces": {
+        "official": "Japonsko",
+        "common": "Japonsko"
+      },
+      "deu": {
+        "official": "Japan",
+        "common": "Japan"
+      },
+      "est": {
+        "official": "Jaapan",
+        "common": "Jaapan"
+      },
+      "fin": {
+        "official": "Japani",
+        "common": "Japani"
+      },
+      "fra": {
+        "official": "Japon",
+        "common": "Japon"
+      },
+      "hrv": {
+        "official": "Japan",
+        "common": "Japan"
+      },
+      "hun": {
+        "official": "Japán",
+        "common": "Japán"
+      },
+      "ita": {
+        "official": "Giappone",
+        "common": "Giappone"
+      },
+      "jpn": {
+        "official": "日本",
+        "common": "日本"
+      },
+      "kor": {
+        "official": "일본국",
+        "common": "일본"
+      },
+      "nld": {
+        "official": "Japan",
+        "common": "Japan"
+      },
+      "per": {
+        "official": "ژاپن",
+        "common": "ژاپن"
+      },
+      "pol": {
+        "official": "Japonia",
+        "common": "Japonia"
+      },
+      "por": {
+        "official": "Japão",
+        "common": "Japão"
+      },
+      "rus": {
+        "official": "Япония",
+        "common": "Япония"
+      },
+      "slk": {
+        "official": "Japonsko",
+        "common": "Japonsko"
+      },
+      "spa": {
+        "official": "Japón",
+        "common": "Japón"
+      },
+      "swe": {
+        "official": "Japan",
+        "common": "Japan"
+      },
+      "urd": {
+        "official": "جاپان",
+        "common": "جاپان"
+      },
+      "zho": {
+        "official": "日本国",
+        "common": "日本"
+      }
+    },
+    "latlng": [
+      36.0,
+      138.0
+    ],
+    "landlocked": false,
+    "area": 377930.0,
+    "flag": "🇯🇵",
+    "flags": [
+      "svg": "https://restcountries.com/data/jpn.svg",
+      "png": "https://restcountries.com/data/png/jpn.png"
+    ],
+    "demonyms": {
+      "eng": {
+        "f": "Japanese",
+        "m": "Japanese"
+      },
+      "fra": {
+        "f": "Japonaise",
+        "m": "Japonais"
+      }
+    }
+  }
+]
 ```
 
 ### Components Hierarchy
