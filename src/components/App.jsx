@@ -2,7 +2,6 @@ import '../styles/App.css';
 
 // COMPONENT IMPORTS 
 import Main from './Main'
-import CountryList from './CountryList'
 import Footer from './Footer'
 
 // IMPORT PAGES
@@ -10,9 +9,8 @@ import Footer from './Footer'
 function App() {
   return (
     <div className="App">
-      <Main/>
-      <CountryList/>
-      <Footer/>
+        <Main/>
+        <Footer/>
     </div>
   );
 }
