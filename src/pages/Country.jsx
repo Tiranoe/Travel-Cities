@@ -12,7 +12,7 @@ function Country() {
                 const response = await fetch(URL);
                 const json = await response.json();
                 console.log(json);
-                setCountries(json.slip.countries);
+                setCountries(json.countries);
             } catch(err) {
                 console.log(err);
             }

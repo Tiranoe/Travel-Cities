@@ -25,8 +25,8 @@ function Show() {
     return (
         <>
             <div className="country-details">
-                <h2>{country.name.common}</h2>
-                <p>Capital: {country.currency}</p>
+                <h2>{country[0].name.common}</h2>
+                <p>Capital: {country[0].capital}</p>
             </div>
             <Link to={'/'}>
                 <p className="back-to-list">Return to Country List</p>
