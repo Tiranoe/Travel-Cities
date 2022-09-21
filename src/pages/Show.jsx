@@ -20,13 +20,16 @@ function Show() {
         return <h2>That country does not exist in database...</h2>
     }
 
-    console.log(country);
 
     return (
         <>
             <div className="country-details">
                 <h2>{country[0].name.common}</h2>
                 <p>Capital: {country[0].capital}</p>
+                <p>Continent: {country[0].continents}</p>
+                <p>Population: {country[0].population} people</p>                <p>Flag: <img src={country[0].flags.png} width="100px"></img></p>
+                <p>Coat Of Arms: <img src={country[0].coatOfArms.png} width="80px"></img></p>
+                <p>Location (Latitude, Longitude) {country[0].latlng[0]}, {country[0].latlng[1]}</p>
             </div>
             <Link to={'/'}>
                 <p className="back-to-list">Return to Country List</p>

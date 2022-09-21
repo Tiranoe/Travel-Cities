@@ -2,31 +2,26 @@ import React, { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
 
 function Country() {
-    const [countries, setCountries] = useState([]);
+    const [countries, setCountries] = useState();
 
     useEffect(() => {
-        const URL='https://restcountries.com/v3.1/all'
+        fetch(`https://restcountries.com/v3.1/name/`)
+        .then(res => res.json())
+        .then(json => {
+            console.log(json)
+            setCountries(json)
+        })
 
-        const fetchData = async () => {
-            try {
-                const response = await fetch(URL);
-                const json = await response.json();
-                console.log(json);
-                setCountries(json.countries);
-            } catch(err) {
-                console.log(err);
-            }
-        };
+    }, [])
 
-        fetchData();
-    }, []);
+    console.log(countries);
 
     return (
     <div>
         <section className='countries-container'>
             {countries.map((element) => {
                 return(
-                    <Link to={`/${element.url.match(/(\d+)(?=\/$)/g)}`} key={element.url.match(/(\d+)(?=\/$)/g)}><h1>{element.name}</h1> 
+                    <Link to={`/${element.URL.match(/(\d+)(?=\/$)/g)}`} key={element.URL.match(/(\d+)(?=\/$)/g)}><h1>{element.name}</h1> 
                     </Link>
                 )
             })}
