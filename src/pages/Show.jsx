@@ -7,7 +7,7 @@ function Show() {
     const {id} = useParams();
 
     useEffect( () => {
-        fetch(`https://restcountries.com/v3.1/name/${id}`) //requestOptions)
+        fetch(`https://restcountries.com/v2/name/${id}`)
         .then(res => res.json())
         .then(json => {
             console.log(json)
@@ -24,11 +24,12 @@ function Show() {
     return (
         <>
             <div className="country-details">
-                <h2>{country[0].name.common}</h2>
+                <h2>{country[0].name}</h2>
                 <p>Capital: {country[0].capital}</p>
-                <p>Continent: {country[0].continents}</p>
-                <p>Population: {country[0].population} people</p>                <p>Flag: <img src={country[0].flags.png} width="100px"></img></p>
-                <p>Coat Of Arms: <img src={country[0].coatOfArms.png} width="80px"></img></p>
+                <p>Continent: {country[0].region}</p>
+                <p>Population: {country[0].population} people</p>
+                <p>Currency: {country[0].currencies[0].name} Money Symbol: {country[0].currencies[0].symbol} </p>
+                <p>Flag: <img src={country[0].flag} width="100px" alt=""></img></p>
                 <p>Location (Latitude, Longitude) {country[0].latlng[0]}, {country[0].latlng[1]}</p>
             </div>
             <Link to={'/'}>
