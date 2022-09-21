@@ -19,11 +19,13 @@ function Country() {
     return (
     <div>
         <section className='countries-container'>
-            <h1> test </h1>
+            <h1> Where would you like to travel? </h1>
+            <h3> Pick your vacation destination below:</h3>
         {countries?.map((element) => (
+            <ul>
             <Link to={`/country/${element.name}`}>
                 {element.name}
-            </Link>
+            </Link></ul>
             ))}
         </section>
     </div>
