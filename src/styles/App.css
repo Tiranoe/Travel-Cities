@@ -44,3 +44,7 @@
   width: 100%;
   padding: 10px 10px 10px 10px;
 }
+
+.background_theme{
+  background-repeat: repeat;
+}

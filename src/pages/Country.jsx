@@ -24,8 +24,10 @@ function Country() {
         {countries?.map((element) => (
             <ul>
             <Link to={`/country/${element.name}`}>
-                {element.name}
+                <div>{element.name}</div>
+                <div><img src={element.flag} width="50px"></img></div>
             </Link></ul>
+            
             ))}
         </section>
     </div>

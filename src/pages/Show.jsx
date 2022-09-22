@@ -25,6 +25,7 @@ function Show() {
         <>
             <div className="country-details">
                 <h2>{country[0].name}</h2>
+                <h4> Also Known as: {country[0].altSpellings[0]}, {country[0].altSpellings[1]}, {country[0].altSpellings[2]}</h4>
                 <p>Capital: {country[0].capital}</p>
                 <p>Continent: {country[0].region}</p>
                 <p>Population: {country[0].population} people</p>
