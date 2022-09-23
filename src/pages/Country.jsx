@@ -14,7 +14,7 @@ function Country() {
     fetchData();
     }, [])
 
-    console.log(countries);
+    //console.log(countries);
 
     return (
     <div>
