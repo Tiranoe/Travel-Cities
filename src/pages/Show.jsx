@@ -23,6 +23,7 @@ function Show() {
 
     return (
         <>
+        <section className='countries-container'>
             <div className="country-details">
                 <h2>{country[0].name}</h2>
                 <h4> Also Known as: {country[0].altSpellings[0]}, {country[0].altSpellings[1]}, {country[0].altSpellings[2]}</h4>
@@ -36,6 +37,7 @@ function Show() {
             <Link to={'/'}>
                 <p className="back-to-list">Return to Country List</p>
             </Link>
+        </section>
         </>
     );
 }

@@ -20,15 +20,17 @@ function Country() {
     <div>
         <section className='countries-container'>
             <h1> Where would you like to travel? </h1>
-            <h3> Pick your vacation destination below:</h3>
+            <h3 class="line"> Pick your vacation destination below:</h3>
+            <div class = "countries-list">
         {countries?.map((element) => (
             <ul>
             <Link to={`/country/${element.name}`}>
-                <div>{element.name}</div>
-                <div><img src={element.flag} width="50px"></img></div>
+                <div class="country-name">{element.name}</div>
+                <div><img src={element.flag} alt="Country Flag"width="50%"></img></div>
             </Link></ul>
             
             ))}
+            </div>
         </section>
     </div>
         )
