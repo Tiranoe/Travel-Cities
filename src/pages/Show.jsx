@@ -31,7 +31,7 @@ function Show() {
                 <p>Continent: {country[0].region}</p>
                 <p>Population: {country[0].population} people</p>
                 <p>Currency: {country[0].currencies[0].name}</p>
-                <p>Symbol: {country[0].currencies[0].symbol} </p>
+                <h5>Currency Symbol: {country[0].currencies[0].symbol} </h5>
                 <p>Flag: <img src={country[0].flag} width="100px" alt=""></img></p>
                 <p>Location (Latitude, Longitude) {country[0].latlng[0]}, {country[0].latlng[1]}</p>
             </div>
